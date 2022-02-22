@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+section.container {
+    position: relative;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px hsl(216, 65%, 5%), 10px 10px 30px 10px hsl(216, 68%, 7%);
+}
+
+section.container div.images {
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+
+section.container img.cube {
+    max-width: 85%;
+    width: 100%;
+    align-self: center;
+    border-radius: 10px;
+    margin: 20px 25px;
+}
+
+section.container div.background {
+    background-color: hsl(178, 100%, 50%);
+    position: absolute;
+    height: 86%;
+    width: 85%;
+    margin: 0 auto;
+    top: 20px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+section.container img.eye {
+    width: 15%;
+    position: absolute;
+    top: 42%;
+    left: 43.5%;
+    opacity: 0;
+}
+
+
+section.container h1 {
+    padding: 0 30px 10px 30px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+section.container p {
+    padding: 0 30px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+
+}
+
+section.container .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+section.container .wrap .eth {
+    position: relative;
+    flex-basis: 50%;
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+section.container .wrap .eth p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    margin-left: 20px;
+
+}
+
+section.container .wrap .eth img {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+
+}
+
+section.container .wrap .time {
+    position: relative;
+    flex-basis: 50%;
+    text-align: end;
+    padding: 0 30px;
+}
+
+section.container .wrap .time p {
+    margin: 0;
+    padding: 0;
+}
+
+section.container .wrap .time img {
+    position: absolute;
+    top: 18%;
+    left: 22%;
+
+}
+
+section.container .wrap .author {
+    display: flex;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin: 10px 20px -10px;
+    padding: 20px 0 15px 0;
+}
+
+section.container .wrap .author img {
+    width: 12%;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+section.container .wrap .author p {
+    margin: 5px;
+    padding: 0
+}
+
+section.container .wrap .author span {
+    color: hsl(0, 0%, 100%);
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+
+    body {
+        width: 1440px;
+    }
+
+    section.container div.images:hover {
+        cursor: pointer;
+    }
+
+    section.container div.images:hover div.background {
+        opacity: 0.5;
+    }
+
+    section.container div.images:hover img.eye {
+        opacity: 1;
+    }
+
+    section.container img.eye {
+        width: 15%;
+        position: absolute;
+        top: 42%;
+        left: 43.5%;
+        opacity: 0;
+    }
+
+    section.container h1:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+    }
+
+    section.container .wrap .author span:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+    }
+}
